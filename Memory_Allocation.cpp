@@ -14,7 +14,7 @@ class Shop{
 };
 
 void Shop :: set_Price(void){
-    cout<<"Enter the id of the item: "<<endl;
+    cout<<"Enter the id of the item no. "<<counter+1<<endl;
     cin>>itemId[counter];
     cout<<"Enter the price of the item: "<<endl;
     cin>>item_Price[counter];
@@ -30,6 +30,7 @@ void Shop :: display_Price(void){
 
 int main(){
     Shop Electronics;
+    Electronics.initCounter();
     Electronics.set_Price();
     Electronics.set_Price();
     Electronics.set_Price();
