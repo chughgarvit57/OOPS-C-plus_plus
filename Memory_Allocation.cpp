@@ -24,11 +24,15 @@ void Shop :: set_Price(void){
 void Shop :: display_Price(void){
     for (int i = 0; i < counter; i++)
     {
-        cout<<"The price of item with id "<<itemId[i]<<" is "<<item_Price[i];
+        cout<<"The price of item with id "<<itemId[i]<<" is "<<item_Price[i]<<endl;
     } 
 }
 
 int main(){
-    
+    Shop Electronics;
+    Electronics.set_Price();
+    Electronics.set_Price();
+    Electronics.set_Price();
+    Electronics.display_Price();
     return 0;
 }
